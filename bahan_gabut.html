@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevNotes — Belajar Web Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">Dev<span>Notes</span></div>
+
+      <!-- ===== NAV ===== -->
+      <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#artikel">Artikel</a>
+        <a href="#tentang">Tentang</a>
+        <a href="https://www.dicoding.com/users/your-username/academies" target="_blank" rel="noopener noreferrer" class="nav-cta">
+          &#9654; Profil Dicoding
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PAGE WRAPPER ===== -->
+  <div class="page-wrapper" id="beranda">
+    <div class="content-grid">
+
+      <!-- ===== MAIN ===== -->
+      <main>
+
+        <!-- Hero Section -->
+        <div class="hero">
+          <span class="hero-tag">&#128187; Web Development Blog</span>
+          <h1>
+            Belajar <em>Web Development</em><br />
+            dari Dasar hingga Mahir
+          </h1>
+          <p>
+            Panduan lengkap membangun website modern menggunakan HTML semantik, CSS styling,
+            dan Flexbox layout. Cocok untuk pemula yang ingin memulai perjalanan sebagai
+            web developer profesional.
+          </p>
+          <div class="hero-meta">
+            <div class="meta-item">
+              <span class="meta-dot"></span>
+              <span>HTML &amp; CSS</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-dot"></span>
+              <span>Flexbox Layout</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-dot"></span>
+              <span>Semantic HTML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== ARTICLE 1 ===== -->
+        <article id="artikel">
+          <h2>Apa Itu HTML Semantik?</h2>
+          <p>
+            HTML Semantik adalah penggunaan elemen HTML yang memiliki makna atau arti yang jelas,
+            bukan hanya sekadar untuk tampilan visual. Dengan menggunakan elemen semantik,
+            kode HTML kita menjadi lebih mudah dibaca oleh manusia maupun mesin seperti
+            mesin pencari dan screen reader.
+          </p>
+          <p>
+            Contoh elemen semantik yang sering digunakan antara lain <code>&lt;header&gt;</code>,
+            <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>,
+            <code>&lt;aside&gt;</code>, dan <code>&lt;footer&gt;</code>. Masing-masing elemen ini
+            memiliki fungsi dan makna yang spesifik dalam struktur halaman web.
+          </p>
+
+          <h3>Keuntungan Menggunakan Semantic HTML</h3>
+          <p>
+            Penggunaan HTML semantik memberikan banyak manfaat: meningkatkan aksesibilitas bagi
+            pengguna dengan disabilitas, membantu mesin pencari memahami konten halaman (SEO),
+            membuat kode lebih mudah dipelihara, dan meningkatkan keterbacaan kode bagi developer lain.
+          </p>
+
+          <div class="code-block">
+&lt;!-- Struktur Semantic HTML --&gt;<br />
+&lt;header&gt;...Judul dan Navigasi...&lt;/header&gt;<br />
+&lt;main&gt;<br />
+&nbsp;&nbsp;&lt;article&gt;...Konten Utama...&lt;/article&gt;<br />
+&nbsp;&nbsp;&lt;aside&gt;...Konten Pendukung...&lt;/aside&gt;<br />
+&lt;/main&gt;<br />
+&lt;footer&gt;...Footer...&lt;/footer&gt;
+          </div>
+        </article>
+
+        <!-- ===== ARTICLE 2 ===== -->
+        <article>
+          <h2>Flexbox: Layout Modern yang Responsif</h2>
+          <p>
+            CSS Flexbox (Flexible Box Layout) adalah metode tata letak satu dimensi yang dirancang
+            untuk mengatur elemen dalam satu baris atau kolom. Flexbox memudahkan kita dalam membuat
+            layout yang responsif tanpa menggunakan properti <code>float</code> yang lebih kompleks
+            dan sulit dikontrol.
+          </p>
+
+          <h3>Properti Utama Flexbox</h3>
+          <p>
+            Untuk mengaktifkan flexbox, cukup tambahkan <code>display: flex</code> pada elemen
+            kontainer (flex container). Selanjutnya, elemen-elemen di dalamnya (flex items) akan
+            otomatis tersusun dalam satu baris secara horizontal.
+          </p>
+
+          <div class="code-block">
+.container {<br />
+&nbsp;&nbsp;display: flex;<br />
+&nbsp;&nbsp;justify-content: space-between;<br />
+&nbsp;&nbsp;align-items: center;<br />
+&nbsp;&nbsp;gap: 1rem;<br />
+&nbsp;&nbsp;flex-wrap: wrap;<br />
+}
+          </div>
+
+          <p>
+            Properti <code>justify-content</code> mengatur distribusi item secara horizontal,
+            sedangkan <code>align-items</code> mengatur posisi vertikal. Dengan kombinasi keduanya,
+            kita bisa membuat layout yang sangat fleksibel dan responsif di berbagai ukuran layar.
+          </p>
+
+          <div class="tech-grid">
+            <span class="tech-tag">display: flex</span>
+            <span class="tech-tag">flex-direction</span>
+            <span class="tech-tag">justify-content</span>
+            <span class="tech-tag">align-items</span>
+            <span class="tech-tag">flex-wrap</span>
+            <span class="tech-tag">gap</span>
+            <span class="tech-tag">flex-grow</span>
+            <span class="tech-tag">flex-shrink</span>
+          </div>
+        </article>
+
+        <!-- ===== ARTICLE 3 ===== -->
+        <article>
+          <h2>Styling dengan CSS: Dari Dasar ke Lanjutan</h2>
+          <p>
+            CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan dan
+            format dokumen HTML. Dengan CSS, kita bisa mengontrol warna, tipografi, spacing,
+            animasi, dan banyak aspek visual lainnya dari sebuah halaman web.
+          </p>
+
+          <h3>CSS Variables untuk Konsistensi Desain</h3>
+          <p>
+            Salah satu fitur modern CSS yang sangat berguna adalah CSS Custom Properties atau
+            biasa disebut CSS Variables. Dengan mendefinisikan nilai seperti warna dan font sekali
+            di <code>:root</code>, kita bisa menggunakannya di seluruh stylesheet dan memudahkan
+            perubahan tema di masa depan.
+          </p>
+
+          <div class="code-block">
+:root {<br />
+&nbsp;&nbsp;--primary-color: #1a1a2e;<br />
+&nbsp;&nbsp;--accent-color: #e94560;<br />
+&nbsp;&nbsp;--font-size-base: 1rem;<br />
+}<br /><br />
+.button {<br />
+&nbsp;&nbsp;background: var(--accent-color);<br />
+&nbsp;&nbsp;font-size: var(--font-size-base);<br />
+}
+          </div>
+
+          <p>
+            Dengan pendekatan ini, mengubah seluruh palet warna website cukup dilakukan dengan
+            mengedit beberapa baris di bagian <code>:root</code> saja — sangat efisien dan mudah
+            dipelihara dalam jangka panjang.
+          </p>
+        </article>
+
+      </main>
+
+      <!-- ===== ASIDE ===== -->
+      <aside id="tentang">
+
+        <!-- Profile Card dengan Foto -->
+        <div class="profile-card">
+          <!-- Foto profil: ganti src dengan path foto Anda -->
+          <img src="images/profile.jpg" alt="Foto Profil" class="profile-img" />
+         
+
+          <div class="profile-name">Mahardika</div>
+          <div class="profile-role">Web Developer</div>
+          <p class="profile-bio">
+            antusias belajar web development. Sedang mendalami HTML, CSS,
+            dan JavaScript untuk membangun karir di bidang teknologi.
+          </p>
+
+          <div class="profile-stats">
+            <div class="stat-item">
+              <span class="stat-number">12</span>
+              <span class="stat-label">Modul</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Proyek</span>
+            </div>
+          </div>
+
+          <!-- Link ke profil Dicoding - WAJIB sesuai ketentuan -->
+          <a href="https://www.dicoding.com/users/mahardikarofiq21/academies"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="profile-link">
+            &#10024; Lihat Profil Dicoding
+          </a>
+        </div>
+
+        <!-- Biodata -->
+        <div class="info-card">
+          <h3>Biodata</h3>
+          <ul class="info-list">
+            <li>
+              <span class="info-label">Nama</span>
+              <span class="info-value">Mahardika</span>
+            </li>
+            <li>
+              <span class="info-label">Kota</span>
+              <span class="info-value">Jakarta</span>
+            </li>
+            <li>
+              <span class="info-label">Pendidikan</span>
+              <span class="info-value">Pelajar</span>
+            </li>
+            <li>
+              <span class="info-label">Email</span>
+              <span class="info-value">rofikmahardika58@email.com</span>
+            </li>
+            <li>
+              <span class="info-label">Status</span>
+              <span class="info-value">&#128994; Aktif Belajar</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Skill Progress -->
+        <div class="skills-widget">
+          <h3>Skill Progress</h3>
+
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>HTML</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>CSS</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>Flexbox</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width: 70%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>JavaScript</span>
+              <span>50%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Dev<span>Notes</span></div>
+      <nav class="footer-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#artikel">Artikel</a>
+        <a href="#tentang">Tentang</a>
+        <a href="https://www.dicoding.com/users/mahardikarofiq21/academies" target="_blank" rel="noopener noreferrer">Profil Dicoding</a>
+      </nav>
+    
+    </div>
+  </footer>
+
+</body>
+</html>
